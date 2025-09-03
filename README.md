@@ -13,7 +13,8 @@ A C# UWP application that lets users add, remove, and track their daily water in
 - **Design Pattern:** MVVM (Model-View-ViewModel) for clean separation of concerns.
 - **User Interface (UI):**
   
-<img width="1920" height="1032" alt="App UI Screenshot" src="https://github.com/user-attachments/assets/8674fd88-bb21-44bc-984d-9312d8c3c0f8" />
+<img width="1920" height="1033" alt="{DFC76E10-6735-4ADB-996E-506697CA8BC1}" src="https://github.com/user-attachments/assets/e8d87e1d-6fa8-4fc4-89c6-205f12ec851a" />
+
 
 ## Database Structure
 

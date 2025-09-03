@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Water_Intake_Tracker.MainPage"
+    xmlns:vm="using:ClassLibrary2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Water_Intake_Tracker"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignWidth="1923">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="79" TextWrapping="Wrap" Text="Water Intake Tracker " VerticalAlignment="Top" Width="696" Margin="664,0,0,0" FontSize="72" FontFamily="Calibri"/>
+        <TextBlock HorizontalAlignment="Left" Height="87" TextWrapping="Wrap" Text="Options  :" VerticalAlignment="Top" Width="191" RenderTransformOrigin="1.268,0.057" Margin="960,242,0,0" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Left" Height="78" TextWrapping="Wrap" Text="Welcome to the water intake tracker ! Where users can add daily water intake limits to each day of the week." VerticalAlignment="Top" Width="386" Margin="773,93,0,0" FontSize="16" FocusVisualPrimaryBrush="#FF8A8A8A" Foreground="#FFD0C8C8"/>
+        <TextBlock HorizontalAlignment="Left" Height="56" TextWrapping="Wrap" Text="The Result : " VerticalAlignment="Top" Width="231" Margin="201,241,0,0" FontSize="25" />
+        <DropDownButton ToolTipService.ToolTip="Alignment" Margin="1358,428,0,0" RenderTransformOrigin="0.635,0.963" Width="82" VerticalAlignment="Top" CornerRadius="10" Height="34" >
+
+            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="14" Text="&#xE8E4;" />
+            <DropDownButton.Flyout >
+                <MenuFlyout Placement="BottomEdgeAlignedLeft" >
+                    <MenuFlyoutItem Name="Monday" Text="Monday" Icon="AlignLeft" Tag="monday" CornerRadius="10" Click="DropDownButton_Click"
+                         />
+                    <MenuFlyoutItem Name="Tuesday" Text="Tuesday" Icon="AlignCenter" Tag="tuesday" Click="DropDownButton_Click"
+                          />
+                    <MenuFlyoutItem Name="Wednesday" Text="Wednesday" Icon="AlignRight" Tag="wednesday" Click="DropDownButton_Click"
+                            />
+                    <MenuFlyoutItem Name="Thursday" Text="Thursday" Icon="AlignRight" Tag="thursday" Click="DropDownButton_Click"
+        />
+                    <MenuFlyoutItem Name="Friday" Text="Friday" Icon="AlignRight" Tag="friday" Click="DropDownButton_Click"
+        />
+                    <MenuFlyoutItem Name="Saturday" Text="Saturday" Icon="AlignRight" Tag="saturday" Click="DropDownButton_Click"/>
+                    <MenuFlyoutItem Name="Sunday" Text="Sunday" Icon="AlignRight" Tag="sunday" Click="DropDownButton_Click"
+                                    />
+                </MenuFlyout>
+            </DropDownButton.Flyout>
+        </DropDownButton>
+        <TextBlock Height="74" TextWrapping="Wrap" Text="Select the day to add to ur  tracker database please ! And to add the milliliters  for it below!" VerticalAlignment="Top" Margin="965,428,576,0" FontSize="15"/>
+        <ListView x:Name="TheMain_ListView" Margin="38,360,1424,129"/>
+
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="51" Margin="960,536,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="{Binding TextBoxProperty}" Width="295" CornerRadius="5"  PlaceholderText="Enter water milliters for the day " RenderTransformOrigin="0.312,0.941" />
+        <ListView x:Name="Thedays_ListView" Margin="1484,421,-1,493" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"  >
+            <ListView.RenderTransform>
+                <CompositeTransform Rotation="-0.19"/>
+            </ListView.RenderTransform>
+        </ListView>
+        <Button Content="Add Milliliters" Height="60" Margin="1326,536,0,0" VerticalAlignment="Top" Width="106" CornerRadius="10" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="104" TextWrapping="Wrap" Text="You must  select a day in the dropdown box to add to the database in order for the textbox to be enabled to add milliliters for the selected day." VerticalAlignment="Top" Width="452" Margin="965,325,0,0" FontSize="15" Foreground="#FFC1C1C1" />
+        <Button Content="View" Height="55" Margin="1326,665,0,0" VerticalAlignment="Top" Width="106" CornerRadius="10" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" Height="55" TextWrapping="Wrap" Text="View   the weeks water intakes?" VerticalAlignment="Top" Width="237" Margin="965,683,0,0" />
+        <TextBlock HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="Reset the weekend?" VerticalAlignment="Top" Width="260" Margin="965,803,0,0"/>
+        <Button Content="Button" Height="56" Margin="1326,789,0,0" VerticalAlignment="Top" Width="106" CornerRadius="10" Click="Button_Click_2"/>
+        <Button x:Name="Visible_Button" Content="Clear the results" Height="86" Margin="664,519,0,0" VerticalAlignment="Top" Width="135" CornerRadius="10" Visibility="Collapsed" Click="Visible_Button_Click" />
+
+
+    </Grid>
+</Page>

@@ -47,7 +47,7 @@
         <Button Content="Add Milliliters" Height="60" Margin="1326,536,0,0" VerticalAlignment="Top" Width="106" CornerRadius="10" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="104" TextWrapping="Wrap" Text="You must  select a day in the dropdown box to add to the database in order for the textbox to be enabled to add milliliters for the selected day." VerticalAlignment="Top" Width="452" Margin="965,325,0,0" FontSize="15" Foreground="#FFC1C1C1" />
         <Button Content="View" Height="55" Margin="1326,665,0,0" VerticalAlignment="Top" Width="106" CornerRadius="10" Click="Button_Click_1"/>
-        <TextBlock HorizontalAlignment="Left" Height="55" TextWrapping="Wrap" Text="View   the weeks water intakes?" VerticalAlignment="Top" Width="237" Margin="965,683,0,0" />
+        <TextBlock HorizontalAlignment="Left" Height="55" TextWrapping="Wrap" Text="View the week's water intakes?" VerticalAlignment="Top" Width="237" Margin="965,683,0,0" />
         <TextBlock HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" Text="Reset the weekend?" VerticalAlignment="Top" Width="260" Margin="965,803,0,0"/>
         <Button Content="Button" Height="56" Margin="1326,789,0,0" VerticalAlignment="Top" Width="106" CornerRadius="10" Click="Button_Click_2"/>
         <Button x:Name="Visible_Button" Content="Clear the results" Height="86" Margin="664,519,0,0" VerticalAlignment="Top" Width="135" CornerRadius="10" Visibility="Collapsed" Click="Visible_Button_Click" />

@@ -1,7 +1,0 @@
-{
-  "profiles": {
-    "Unit_Tests": {
-      "commandName": "MsixPackage"
-    }
-  }
-}
